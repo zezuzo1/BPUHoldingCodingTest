@@ -39,13 +39,8 @@ public class GlobalFunction
                 .build();
 	}
 
-	public void asyncLoadImage(String url, ImageView imageview)
+	public void initImageLoader(Context context)
 	{
-		ImageLoader.getInstance().displayImage(url, imageview, imageLoaderOption);
-	}
-
-	public void initImageLoader(Context context) {
-
 		if( imageLoaderConfigDone ) return;
 		imageLoaderConfigDone = true;
 
@@ -59,6 +54,11 @@ public class GlobalFunction
 			config.writeDebugLogs();
 
 		ImageLoader.getInstance().init(config.build());
+	}
+
+	public void asyncLoadImage(String url, ImageView imageview)
+	{
+		ImageLoader.getInstance().displayImage(url, imageview, imageLoaderOption);
 	}
 
     public static JSONArray sortRepoJsonarray(JSONArray jsonArr)
