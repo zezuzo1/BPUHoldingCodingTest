@@ -3,7 +3,6 @@ package com.example.s9815.test1.recycler;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
-import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -43,7 +42,6 @@ public class RepoAdapter extends RecyclerView.Adapter<RepoRowHolder> {
             RepoRowHolder holder = (RepoRowHolder)view.getTag();
             int itemPosition = holder.getAdapterPosition();
             RepoItem feedItem = feedItemList.get(itemPosition);
-
             String target_url = feedItem.getTargetUrl();
 
             if( target_url == null || target_url.length() <= 0 )

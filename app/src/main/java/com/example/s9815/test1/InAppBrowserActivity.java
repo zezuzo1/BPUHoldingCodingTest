@@ -1,43 +1,16 @@
 package com.example.s9815.test1;
 
-import android.annotation.TargetApi;
-import android.app.Activity;
 import android.app.AlertDialog;
-import android.app.Dialog;
-import android.app.ProgressDialog;
-import android.content.ActivityNotFoundException;
-import android.content.Context;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.graphics.Bitmap;
-import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.util.TypedValue;
 import android.view.View;
-import android.view.ViewGroup;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
-import android.widget.Toast;
-
-import java.net.URISyntaxException;
-import java.net.URLEncoder;
-import java.util.ArrayList;
-import java.util.Hashtable;
-
-import com.example.s9815.test1.R;
-
-import org.apache.http.util.EncodingUtils;
 
 public class InAppBrowserActivity extends AppCompatActivity {
 
@@ -113,7 +86,6 @@ public class InAppBrowserActivity extends AppCompatActivity {
     }
 
     WebViewClient webViewClient = new WebViewClient() {
-
         @Override
         public void onPageStarted(WebView view, String url, Bitmap favicon) {
             //showDialog(0);

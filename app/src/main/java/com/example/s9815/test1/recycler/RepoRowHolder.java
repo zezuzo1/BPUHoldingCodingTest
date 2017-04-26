@@ -1,11 +1,9 @@
 package com.example.s9815.test1.recycler;
 
-import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 import com.example.s9815.test1.R;
 
 public class RepoRowHolder extends RecyclerView.ViewHolder {
