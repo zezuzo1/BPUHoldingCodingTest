@@ -101,7 +101,7 @@ public class GlobalFunction
         return sortedJsonArray;
     }
 
-    public static void asyncCommonRequest(
+    public static void asyncHttpRequest(
             String url,
             Map<String, String> parameters,
             ResponseHandlerInterface response_handler)

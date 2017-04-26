@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity
         String url = "https://api.github.com/users/" + gitId;
 
         try {
-            GlobalFunction.asyncCommonRequest(url,map,new JsonHttpResponseHandler(){
+            GlobalFunction.asyncHttpRequest(url,map,new JsonHttpResponseHandler(){
                     @Override
                         public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
                             DebugMsg("listClipNew success. " + response.toString() );
@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity
         String url = "https://api.github.com/users/" + gitId + "/repos";
 
         try {
-            GlobalFunction.asyncCommonRequest(url,map,new JsonHttpResponseHandler(){
+            GlobalFunction.asyncHttpRequest(url,map,new JsonHttpResponseHandler(){
                     @Override
                         public void onSuccess(int statusCode, Header[] headers, JSONArray response) {
                             DebugMsg("listClipNew success. " + response.toString() );

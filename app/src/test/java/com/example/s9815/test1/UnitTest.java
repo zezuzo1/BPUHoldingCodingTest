@@ -24,7 +24,7 @@ public class UnitTest {
         String url = "https://api.github.com/users/JakeWharton/repos";
 
         try {
-            GlobalFunction.asyncCommonRequest(url,map,new JsonHttpResponseHandler(){
+            GlobalFunction.asyncHttpRequest(url,map,new JsonHttpResponseHandler(){
                 @Override
                 public void onSuccess(int statusCode, Header[] headers, JSONArray response) {
                     assertFalse("success", true);
